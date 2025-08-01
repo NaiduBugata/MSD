@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        .output {
+            width: 80%;
+            max-width: 900px;
+            height: 60px;
+            background: #0f172a;       /* dark navy blue */
+            border: 2px solid #2563eb; /* vivid blue border */
+            border-radius: 10px;
+            margin: 20px auto;
+            font-size: 1.5rem;
+            color: #38bdf8;            /* cyan text */
+            padding: 10px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            overflow-x: auto;
+        }
+        
+        .container{
+            display: grid;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap: 10px;
+            background-color: rgb(116, 115, 115);
+            padding: 30px;
+            margin: auto;
+            width: 80%;
+            border-radius: 20px;
+        }
+
+        .container > div {
+            background-color: rgb(48, 35, 53);
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 10px;
+            color: rgba(255, 255, 255, 0.971);
+            text-align: center;
+        }
+        
+        .container > div:hover {
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+        }
+
+        #shift,#enter,#ctrl{
+            grid-column: span 2;
+        }
+        #space{
+            grid-column: span 6;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Output box added here -->
+    <div class="output" id="output"></div>
+
+    <div class="container">
+        <div>`</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>-</div>
+        <div>=</div>
+        <div>BKSP</div>
+        <div>HOME</div>
+        <div>TAB</div>
+        <div>q</div>
+        <div>w</div>
+        <div>e</div>
+        <div>r</div>
+        <div>t</div>
+        <div>y</div>
+        <div>u</div>
+        <div>i</div>
+        <div>o</div>
+        <div>p</div>
+        <div>[</div>
+        <div>]</div>
+        <div>\</div>
+        <div>PG UP</div>
+        <div>CAPS</div>
+        <div>a</div>
+        <div>s</div>
+        <div>d</div>
+        <div>f</div>
+        <div>g</div>
+        <div>h</div>
+        <div>j</div>
+        <div>k</div>
+        <div>l</div>
+        <div>;</div>
+        <div>'</div>
+        <div id="enter">ENTER</div>
+        <div>PG DN</div>
+        <div id="shift">SHIFT</div>
+        <div>z</div>
+        <div>x</div>
+        <div>c</div>
+        <div>v</div>
+        <div>b</div>
+        <div>n</div>
+        <div>m</div>
+        <div><</div>
+        <div>></div>
+        <div>?</div>
+        <div id="shift">SHIFT</div>
+        <div> END </div>
+        <div>CTRL</div>
+        <div>FN</div>
+        <div>WIN</div>
+        <div>ALT</div>
+        <div id="space">SPACE</div>
+        <div>ALT</div>
+        <div>CTRL</div>
+        <div><</div>
+        <div>^</div>
+        <div>></div>
+    </div>
+    <script src="keyboard.js"></script>
+</body>
+</html>

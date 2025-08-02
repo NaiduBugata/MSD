@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Dashboard Clone</title>
+  <link rel="stylesheet" href="git(Landing).css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <button class="menu-btn">☰</button>
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo" class="logo">
+      <span class="title">Dashboard</span>
+    </div>
+    <div class="header-center">
+      <input type="text" placeholder="Type / to search" class="header-search">
+    </div>
+    <div class="header-right">
+      <button class="icon-btn">👥</button>
+      <button class="icon-btn">➕</button>
+      <button class="icon-btn">🔔</button>
+      <button class="icon-btn">🔗</button>
+      <button class="icon-btn">📩</button>
+      <div class="avatar">H</div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Top repositories</h2>
+        <button class="new-btn">New</button>
+      </div>
+      <input type="text" placeholder="Find a repository…">
+      <ul class="repo-list">
+        <li><span class="repo-avatar"></span> NaiduBugata/MSD</li>
+        <li><span class="repo-avatar"></span> NaiduBugata/warehouse-management-system</li>
+        <li><span class="repo-avatar"></span> NaiduBugata/Resume</li>
+        <li><span class="repo-avatar"></span> NaiduBugata/Weather-Website</li>
+        <li><span class="repo-avatar"></span> NaiduBugata/Quiz-Game</li>
+        <li><span class="repo-avatar"></span> NaiduBugata/Assign-07</li>
+        <li><span class="repo-avatar"></span> NaiduBugata/Assign-06</li>
+        <li class="show-more">Show more</li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <h1>Home</h1>
+      <input type="text" placeholder="Ask Copilot" class="ask-box">
+
+      <div class="buttons">
+        <button>My open pull requests</button>
+        <button>Suggest next steps for an issue</button>
+        <button>Create a profile README for me</button>
+      </div>
+
+      <h3 class="feed-title">Feed</h3>
+      <div class="feed">
+        <!-- Card 1 -->
+        <div class="feed-card">
+          <div class="trending">📈 Trending repositories · <a href="#">See more</a></div>
+          <div class="feed-content">
+            <div class="feed-text">
+              <strong>charmbracelet/crush</strong>
+              <p>The glamourous AI coding agent for your favourite terminal 💘</p>
+              <div class="meta">Go · ⭐ 5.3k</div>
+            </div>
+            <button class="star-btn">⭐ Star ▾</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="feed-card">
+          <div class="feed-content">
+            <div class="feed-text">
+              <strong>google/langextract</strong>
+              <p>A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.</p>
+              <div class="meta">Python · ⭐ 1.7k</div>
+            </div>
+            <button class="star-btn">⭐ Star ▾</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rightbar -->
+    <aside class="rightbar">
+      <h3>Latest changes</h3>
+      <div class="timeline">
+        <div class="event"><span class="dot"></span><p><strong>19 hours ago</strong> – Upcoming deprecation of GPU machine type in Codespaces</p></div>
+        <div class="event"><span class="dot"></span><p><strong>Yesterday</strong> – Update on GitHub Copilot consumptive billing for GitHub…</p></div>
+        <div class="event"><span class="dot"></span><p><strong>2 days ago</strong> – GitHub Actions: New APIs and windows-latest migration…</p></div>
+        <div class="event"><span class="dot"></span><p><strong>2 days ago</strong> – Copilot Chat unlocks new repository management skills</p></div>
+      </div>
+      <a href="#" class="changelog">View changelog →</a>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 GitHub, Inc.
+    <a href="#">Terms</a> ·
+    <a href="#">Privacy</a> ·
+    <a href="#">Security</a> ·
+    <a href="#">Status</a> ·
+    <a href="#">Docs</a> ·
+    <a href="#">Contact</a> ·
+    <a href="#">Manage cookies</a> ·
+    <a href="#">Do not share my personal information</a>
+  </footer>
+</body>
+</html>
